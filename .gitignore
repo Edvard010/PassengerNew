@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Passenger/obj
+/Passenger.Tests.EndToEnd/obj
+/Passenger.Tests/obj
+/Passenger.Infrastructure/obj
+/Passenger.Api/obj
+/.vs/Passenger/v16
+/.vs/Passenger/DesignTimeBuild
