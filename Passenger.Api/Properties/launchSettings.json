@@ -5,7 +5,7 @@
     "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:59087",
-      "sslPort": 44314
+      "sslPort": 44314 // localhost:44314/weatherforecast in chrome
     }
   },
   "profiles": {

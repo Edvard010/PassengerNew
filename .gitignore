@@ -9,3 +9,9 @@
 /Passenger.Api/obj
 /.vs/Passenger/v16
 /.vs/Passenger/DesignTimeBuild
+/.vs/Passenger/config
+/Passenger/bin/Debug/netstandard2.0
+/Passenger.Api/bin/Debug/netcoreapp3.1
+/Passenger.Infrastructure/bin/Debug/netstandard2.0
+/Passenger.Tests/bin/Debug/netcoreapp3.1
+/Passenger.Tests.EndToEnd/bin/Debug/netcoreapp3.1
