@@ -7,6 +7,6 @@ namespace Passenger.Infrastructure.Services
 {
     public interface IDriverService
     {
-        DriverDto Get(Guid userid);        
+        DriverDto Get(Guid userid);
     }
 }

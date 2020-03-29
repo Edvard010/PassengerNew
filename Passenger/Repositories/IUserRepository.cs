@@ -12,7 +12,6 @@ namespace Passenger.Core.Repositories
         IEnumerable<User> GetAll();
         void Add(User user);
         void Update(User user);
-        void Remove(Guid id);
-        
+        void Remove(Guid id);        
     }
 }

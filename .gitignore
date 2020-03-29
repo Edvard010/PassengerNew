@@ -15,3 +15,4 @@
 /Passenger.Infrastructure/bin/Debug/netstandard2.0
 /Passenger.Tests/bin/Debug/netcoreapp3.1
 /Passenger.Tests.EndToEnd/bin/Debug/netcoreapp3.1
+/.vs

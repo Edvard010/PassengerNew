@@ -19,7 +19,7 @@ namespace Passenger.Infrastructure.Repositories
             => _drivers.Single(x => x.UserId == userid);
 
         public IEnumerable<Driver> GetAll()
-        => _drivers;
+            => _drivers;
 
         public void Update(Driver driver)
         {

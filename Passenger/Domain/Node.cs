@@ -50,7 +50,6 @@ namespace Passenger.Core.Domain
             }
             Latitude = latitude;
             UpdatedAt = DateTime.UtcNow;
-
         }
     }
 }
