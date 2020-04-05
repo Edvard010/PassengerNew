@@ -4,11 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Passenger.Infrastructure.Commands.Users;
 using Passenger.Infrastructure.DTO;
 using Passenger.Infrastructure.Services;
 
 namespace Passenger.Api.Controllers
-{    
+{
     [Route("[controller]")]
     public class UsersController : Controller
     {
@@ -20,6 +21,13 @@ namespace Passenger.Api.Controllers
         }
         [HttpGet("{email}")]
         public UserDto Get(string email)
-        => _userService.Get(email);   
+        => _userService.Get(email);
+
+        [HttpPost("")]
+        public void Post([FromBody]CreateUser request)
+        {
+            _userService.Register(request.Email, request.Username, request.Password);
+        }
     }
 }
+
