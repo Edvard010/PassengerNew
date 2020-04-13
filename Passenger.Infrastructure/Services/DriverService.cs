@@ -15,7 +15,7 @@ namespace Passenger.Infrastructure.Services
         }
         public DriverDto Get(Guid userid)
         {
-            var driver = _driverRepository.Get(userid);
+            var driver = _driverRepository.GetAsync(userid);
             return new DriverDto();
         }
     }
