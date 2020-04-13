@@ -2,11 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Passenger.Infrastructure.Services
 {
     public interface IDriverService
     {
-        DriverDto Get(Guid userid);
+        Task<DriverDto> GetAsync(Guid userid);
     }
 }

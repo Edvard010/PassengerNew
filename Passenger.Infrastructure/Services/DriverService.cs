@@ -3,6 +3,7 @@ using Passenger.Infrastructure.DTO;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Passenger.Infrastructure.Services
 {
@@ -13,10 +14,10 @@ namespace Passenger.Infrastructure.Services
         {
             _driverRepository = driverRepository;
         }
-        public DriverDto Get(Guid userid)
+        public async Task <DriverDto> GetAsync(Guid userid)
         {
-            var driver = _driverRepository.GetAsync(userid);
+            var driver = await _driverRepository.GetAsync(userid);
             return new DriverDto();
-        }
+        }        
     }
 }
