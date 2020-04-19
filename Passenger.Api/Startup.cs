@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Passenger.Core.Repositories;
+using Passenger.Infrastructure.IoC.Modules;
 using Passenger.Infrastructure.Repositories;
 using Passenger.Infrastructure.Services;
 
@@ -17,6 +18,8 @@ namespace Passenger.Api
 {
     public class Startup
     {
+        public IConfigurationRoot Configuration { get; }
+        public IContainer ApplicationContainer { get; private set; }
         public Startup(IWebHostEnvironment env)
         {
             var builder = new ConfigurationBuilder()
@@ -26,8 +29,6 @@ namespace Passenger.Api
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
-        public IConfigurationRoot Configuration { get; }
-        public IContainer ApplicationContainer { get; private set; }
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
@@ -41,6 +42,7 @@ namespace Passenger.Api
             });
             var builder = new ContainerBuilder();
             builder.Populate(services);
+            builder.RegisterModule<CommandModule>();
             ApplicationContainer = builder.Build();
             return new AutofacServiceProvider(ApplicationContainer);
         }
@@ -50,6 +52,6 @@ namespace Passenger.Api
             //app.UseMvc();
             appLifetime.ApplicationStopped.Register(() => ApplicationContainer.Dispose());
         }
-        
+
     }
 }
