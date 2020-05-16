@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=35cc68a4_002D706c_002D4924_002Db6bf_002De4a8e925f7f6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Register_async_should_invoke_add_async_on_repository" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::C7731539-D014-4F69-92A2-52A878AE8648::.NETCoreApp,Version=v3.1::Passenger.Tests.Services.UserServiceTests.Register_async_should_invoke_add_async_on_repository&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;Project Location="C:\Users\havre\Downloads\PassengerNew (1)\PassengerNew\Passenger.Tests.EndToEnd" Presentation="&amp;lt;Passenger.Tests.EndToEnd&amp;gt;" /&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

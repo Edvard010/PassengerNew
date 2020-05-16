@@ -49,7 +49,8 @@ namespace Passenger.Api
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory,
             IHostApplicationLifetime appLifetime)
         {
-            //app.UseMvc();
+            app.UseRouting();
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
             appLifetime.ApplicationStopped.Register(() => ApplicationContainer.Dispose());
         }
 

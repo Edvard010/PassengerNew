@@ -16,3 +16,8 @@
 /Passenger.Tests/bin/Debug/netcoreapp3.1
 /Passenger.Tests.EndToEnd/bin/Debug/netcoreapp3.1
 /.vs
+/.idea/.idea.Passenger/.idea
+/Passenger/bin/Release/netstandard2.0
+/Passenger.Infrastructure/bin/Release/netstandard2.0
+/Passenger.Tests/bin/Release/netcoreapp3.1
+/Passenger.Tests.EndToEnd/bin/Release/netcoreapp3.1

@@ -1,18 +1,14 @@
-using NUnit.Framework;
+using Xunit;
 
 namespace Passenger.Tests
 {
     public class Tests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
 
-        [Test]
+        [Fact]
         public void Test1()
         {
-            Assert.Pass();
+            Assert.True(true);
         }
     }
 }

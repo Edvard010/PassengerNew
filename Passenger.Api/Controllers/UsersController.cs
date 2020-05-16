@@ -35,6 +35,7 @@ namespace Passenger.Api.Controllers
         {
             await CommandDispatcher.DispatchAsync(command);
             //await _userService.RegisterAsync(request.Email, request.Username, request.Password);
+            //Location: users/user10@email.com
             return Created($"users/{command.Email}", new object());
         }
     }
